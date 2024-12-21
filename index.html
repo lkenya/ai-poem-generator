@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>AI Poem Generator</title>
   </head>
@@ -12,7 +13,7 @@
       <h1>AI Poem generator</h1>
     </header>
     <main>
-      <form action="">
+      <form action="" id="poem-generator-form">
         <input
           type="text"
           placeholder="Words to search"
@@ -23,15 +24,8 @@
         />
         <input type="submit" class="submit-button" />
       </form>
-      
-      <div class="poem">
-        Oh, the autumn breeze, it whispers low
-        <br />
-        Of leaves that fall, and snow that's slow
-        <br />
-        The trees, they shed their golden hue
-      </div>
-      <div></div>
+
+      <div class="poem" id="poem"></div>
     </main>
     <footer>
       This AI project was coded by Lovienia Kamusasa
