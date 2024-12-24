@@ -10,35 +10,38 @@
   </head>
   <body>
     <div class="container">
-        <header>
-      <h1>AI Poem generator</h1>
-    </header>
-    <main>
-      <form action="" id="poem-generator-form">
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-          autocomplete="off"
-          class="instructions"
-          id="user-instructions"
-        />
-        <input type="submit" class="submit-button" />
-      </form>
+      <header>
+        <h1>AI Poem generator</h1>
+      </header>
+      <main>
+        <div class="form-wrapper">
+          <form action="" id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />       
+          </form>
+          <div class="hint">i.e Flower, Paris, Cheese</div>
+        </div>
 
-      <div class="poem" id="poem"></div>
-    </main>
-    <footer>
-      This AI project was coded by Lovienia Kamusasa
-      <a href="https://github.com/lkenya/ai-poem-generator">
-        and is open sourced on GitHub
-      </a>
-      and is
-      <a href="https://my-aipoem-generator.netlify.app/">hosted on Netlify</a>
-    </footer>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+      <footer>
+        This AI project was coded by Lovienia Kamusasa
+        <a href="https://github.com/lkenya/ai-poem-generator">
+          and is open sourced on GitHub
+        </a>
+        and is
+        <a href="https://my-aipoem-generator.netlify.app/">hosted on Netlify</a>
+      </footer>
     </div>
-    
+
     <script src="src/index.js"></script>
   </body>
 </html>
