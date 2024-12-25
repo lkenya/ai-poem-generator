@@ -2,43 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=h1, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI Poem generator</h1>
+        <h1>AI Poem Generator</h1>
       </header>
+
       <main>
         <div class="form-wrapper">
-          <form action="" id="poem-generator-form">
+          <form id="poem-generator-form">
             <input
               type="text"
-              placeholder="Enter the topic of the poem"
+              placeholder="Enter the topic of a poem"
               autofocus
               required
               autocomplete="off"
               class="instructions"
               id="user-instructions"
             />
-            <input type="submit" class="submit-button" />       
+            <input type="submit" class="submit-button" />
           </form>
-          <div class="hint">i.e Flower, Paris, Cheese</div>
+          <div class="hint">i.e: Flower, Paris or Cheese</div>
         </div>
-
         <div class="poem hidden" id="poem"></div>
       </main>
+
       <footer>
-        This AI project was coded by Lovienia Kamusasa
-        <a href="https://github.com/lkenya/ai-poem-generator">
-          and is open sourced on GitHub
-        </a>
+        This AI project was coded by
+        <a href="https://github.com/matthieua/" target="_blank"
+          >Lovienia Kamusasa</a
+        >
         and is
-        <a href="https://my-aipoem-generator.netlify.app/">hosted on Netlify</a>
+        <a href="https://github.com/lkenya/ai-poem-generator" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://my-aipoem-generator.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
       </footer>
     </div>
 
